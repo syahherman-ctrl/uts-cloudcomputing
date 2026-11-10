@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Cloud Computing - Hermansyah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: #151e33;
+            border: 1px solid #263b5c;
+            padding: 45px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 50px #0008;
+        }
+
+        .tag {
+            display: inline-block;
+            color: #4fffe2;
+            background: #153b43;
+            padding: 9px 17px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #4f9cff;
+        }
+
+        p {
+            color: #b9c6d9;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            background: #202c44;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: left;
+            line-height: 2;
+        }
+
+        button {
+            background: #2589f5;
+            color: white;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0870d8;
+        }
+
+        #pesan {
+            margin-top: 20px;
+            color: #4fffe2;
+            font-weight: bold;
+        }
+
+        footer {
+            color: #8191aa;
+            margin-top: 30px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="tag">CLOUD COMPUTING PROJECT</div>
+
+        <h1>Web Application <span>Cloud</span></h1>
+
+        <p>
+            Selamat datang di website demonstrasi
+            implementasi Cloud Computing menggunakan Vercel.
+        </p>
+
+        <div class="info">
+            <p><b>Nama:</b> Hermansyah</p>
+            <p><b>NIM:</b> I.2510857</p>
+            <p><b>Platform:</b> Vercel</p>
+            <p><b>Teknologi:</b> HTML, CSS, JavaScript</p>
+            <p><b>Deployment:</b> Cloud Hosting</p>
+        </div>
+
+        <button onclick="tampilkanPesan()">
+            Uji Aplikasi
+        </button>
+
+        <div id="pesan"></div>
+
+        <footer>
+            Ujian Tengah Semester - Cloud Computing
+        </footer>
+
+    </div>
+
+    <script>
+        function tampilkanPesan() {
+            document.getElementById("pesan").innerHTML =
+                "Berhasil! Web Application berjalan dengan baik.";
+        }
+    </script>
+</body>
+</html>
